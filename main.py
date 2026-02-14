@@ -20,6 +20,14 @@ class PixabayVideoDownloader(ctk.CTk):
         # Configurações da Janela
         self.title("Pixabay Video Downloader Pro")
         self.geometry("1100x800")
+
+        # Ícone da aplicação (arquivo icon.ico na mesma pasta)
+        try:
+            icon_path = os.path.join(os.path.dirname(__file__), "icon.ico")
+            if os.path.exists(icon_path):
+                self.iconbitmap(icon_path)
+        except Exception:
+            pass
         
         # Variáveis de Estado
         self.api_key = ctk.StringVar(value=self.load_config("api_key", ""))

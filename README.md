@@ -45,4 +45,5 @@ The GUI will open. The sidebar contains settings (API key, delay, auto page adva
 - `config.json` — stores your `api_key`
 - `pixabay_history.json` — saved download history (created automatically)
 
-If you'd like, I can also add examples for automated runs or a small CLI wrapper.
+**Create installer**
+- `pyinstaller --onefile --windowed --name "PixabayDownloader" --icon "icon.ico" main.py`
